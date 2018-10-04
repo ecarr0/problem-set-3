@@ -40,7 +40,7 @@ public class ProblemSet3 {
 		ps3.makeBricks(3, 1, 9);
 		ps3.makeBricks(3, 2, 10);
 		ps3.loneSum(1, 2, 3);
-		ps3.loneSum(3, 2, 2);
+		ps3.loneSum(3, 2, 3);
 		ps3.loneSum(3, 3, 3);
 		ps3.luckySum(1, 2, 3);
 		ps3.luckySum(1, 2, 13);
@@ -61,8 +61,7 @@ public class ProblemSet3 {
 		if(you <= 2 || date <= 2) {
 			System.out.println("NO");
 		}
-		else if(you >= 8 || date >= 8)
-		{
+		else if(you >= 8 || date >= 8) {
 			System.out.println("YES");
 		}
 		else {
@@ -74,16 +73,14 @@ public class ProblemSet3 {
 		char firstChar = str.charAt(0);
 		char lastChar = str.charAt(str.length() - 1);
 		if(firstChar == 'f') {
-			if(lastChar == 'b')
-			{
+			if(lastChar == 'b') {
 				System.out.println("FIZZBUZZ");
 			}
 			else {
 				System.out.println("FIZZ");
 			}
 		}
-		else if(lastChar == 'b')
-		{
+		else if(lastChar == 'b') {
 			System.out.println("BUZZ");
 		}
 		else {
@@ -93,8 +90,7 @@ public class ProblemSet3 {
 	}
 		
 	public void squirrelPlay(int temp, boolean isSummer) {
-		if(isSummer)
-		{
+		if(isSummer) {
 			if(temp >= 60 && temp <= 100) {
 				System.out.println("YES");
 			}
@@ -103,8 +99,7 @@ public class ProblemSet3 {
 			}
 		}
 		else {
-			if(temp >= 60 && temp <= 90)
-			{
+			if(temp >= 60 && temp <= 90) {
 				System.out.println("YES");
 			}
 			else {
@@ -115,16 +110,14 @@ public class ProblemSet3 {
 	
 	public void fizzStringAgain(int n) {
 		if((n % 3) == 0) {
-			if((n % 5) == 0)
-			{
+			if((n % 5) == 0) {
 				System.out.println("FIZZBUZZ!");
 			}
 			else {
 				System.out.println("FIZZ!");
 			}
 		}
-		else if ((n % 5) == 0)
-		{
+		else if ((n % 5) == 0) {
 			System.out.println("BUZZ!");
 		}
 		else {
@@ -134,8 +127,7 @@ public class ProblemSet3 {
 	
 	public void makeBricks(int small, int big, int goal) {
 		if ((goal / 5) <= big) {
-			if((goal % 5) <= small)
-			{
+			if((goal % 5) <= small) {
 				System.out.println("YES");
 			}
 			else {
@@ -202,10 +194,10 @@ public class ProblemSet3 {
 	}
 	
 	public void isPrime(int n) {
-		if(n == 1) {
+		if(n <= 1) {
 			System.out.println("NOT PRIME");
 		}
-		else if (n == 2 || n == 3 || n == 5 | n == 7 ) {
+		else if (n == 2 || n == 3 || n == 5 || n == 7 ) {
 			System.out.println("PRIME");
 		}
 		else {
